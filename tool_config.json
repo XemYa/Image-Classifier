@@ -1,0 +1,20 @@
+{
+  "title": "Classify Image as Dog or Cat",
+  "description": "Classifies an image as a dog or cat using Google Cloud Vision API",
+  "inputs": {
+    "image_url": {
+      "type": "string",
+      "description": "The URL of the image to classify"
+    },
+    "google_cloud_vision_account": {
+      "type": "oauth_token",
+      "description": "Google Cloud Vision API account"
+    }
+  },
+  "outputs": {
+    "classification": "string",
+    "confidence": "number",
+    "matched_label": "string",
+    "all_detected_labels": "array"
+  }
+}
